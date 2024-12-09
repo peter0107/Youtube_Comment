@@ -1,7 +1,7 @@
 from googleapiclient.discovery import build
 
 
-API_KEY = 'AIzaSyBcBf5Ilo8b2uZXd9xguqvvqmMyqSXQIoM'
+API_KEY = ''
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 MAX_PLAYLIST_PER_CHANNEL = 1

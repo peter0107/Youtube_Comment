@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+    <div id="title">
+        <h1>Youtube Comment Summarizer</h1>
+    </div>
+    <div id="desc">
+        <h2 id="no">No Comment Detected</h2>
+        <img id="thumbnail" style="display: none"/>
+        <p id="exp"         style="display: none"> </p>
+    </div>
+    <div id="submit">
+        <div id="btn" class="button">
+            <div id="txt" class="text">Summarize</div>
+        </div>
+        <div class="progress-bar"></div>
+        <svg x="0px" y="0px" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+            <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+        </svg>
+    </div>
+
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/jquery.anime.js"></script>
+    <script src="./popup.js"></script>
+</body>
+</html>
