@@ -71,18 +71,6 @@ def get_video_name(video_id):
     else:
         raise Exception(f"Could not find a title for video: {video_id}")
 
-
-
-
-
-
-
-
-
-
-
-
-
 def get_video_comments(video_id):
     comments = []
     response = api_obj.commentThreads().list(

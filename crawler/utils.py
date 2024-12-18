@@ -28,5 +28,6 @@ def save_comments_to_csv(title, comments):
     """
     df = pd.DataFrame(comments, columns=['author', 'comment', 'num_likes'])
     filename = f"{output_dir}/{clean_filename(title)}.xlsx"
-    df = df.map(clean_illegal_characters)
+    df = df.applymap(clean_illegal_characters)
     df.to_excel(filename)
+    return filename
